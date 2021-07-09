@@ -1,0 +1,25 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './flashcard.css'
+
+export default function Flashcard() {
+  const [ flashcard, setFlashcard ] = useState([]);
+  const [ FlashcardNumber, setFlashcardNumber ] = useState(0);
+
+  useEffect(() => {
+      axios.get('http://127.0.0.1:8000/flashcard/')
+      .then((response) => {
+        setFlashcard(response.data);
+      });
+    }, []);
+  
+  if(flashcard.length === 0){
+      return(
+        <div>
+          <center>
+            <h4>"There are no flashcards to display"</h4>
+          </center>
+        </div>
+      )
+  }
+
