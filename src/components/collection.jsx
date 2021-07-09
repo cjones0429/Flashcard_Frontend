@@ -10,5 +10,17 @@ export default function Collection() {
       });
     }, []);
 
-
+    return (
+        <div>
+            <h1>Collections</h1>
+                {collection.map((collection) => {
+                  return (
+                      <div key={collection.id}>
+                          <ul><button>{collection.name}</button></ul>
+                        </div>
+                  )
+              })}
+        </div>
+      );
+}
  
