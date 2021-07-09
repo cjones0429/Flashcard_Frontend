@@ -16,3 +16,23 @@ export function CreateFlashcard() {
         <div>
             <h1>Create New Flashcard</h1>
         </div>
+        <form onSubmit={handleSubmit}>
+      <label>
+        Front:
+        <input
+          type="text"
+          onChange={event => setflashcard(event.target.value)}
+        />
+      </label>
+      <label>
+          Back:
+          <input
+            type="text"
+            onChange={event => setflashcard(event.target.value)}
+        />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+    </div>
+  );
+}
