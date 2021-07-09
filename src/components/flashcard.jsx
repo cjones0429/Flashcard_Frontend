@@ -23,3 +23,21 @@ export default function Flashcard() {
       )
   }
 
+  else{
+    function goToNext() {
+      let flash_card = FlashcardNumber;
+      flash_card++;
+      if(flash_card === flashcard.length){
+        flash_card = 0;
+      }
+      setFlashcardNumber(flash_card);
+    }
+
+    function goToPrevious() {
+      let flash_card = FlashcardNumber;
+      flash_card--;
+      if(flash_card < 0)
+      flash_card = flashcard.length -1;
+      setFlashcardNumber(flash_card)
+    }
+
