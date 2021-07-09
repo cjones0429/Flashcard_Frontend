@@ -47,3 +47,20 @@ export default function Flashcard() {
       });
     }
 
+    return(
+      <div>
+          <div classname="main-flashcard">
+            <h1>{flashcard[FlashcardNumber].name}</h1>
+            <h2>{flashcard[FlashcardNumber].front}</h2>
+            <h3>{flashcard[FlashcardNumber].back}</h3>
+          </div>
+          <div>
+            <button onClick={() => goToPrevious()}>Previous Flashcard</button>
+            <button onClick={() => goToNext()}>Next Flashcard</button>
+            <button onClick={() => editFlashCard()}>Edit</button>
+          </div>
+      </div>
+    )
+  }
+}
+ 
