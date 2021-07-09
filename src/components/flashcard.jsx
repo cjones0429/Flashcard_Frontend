@@ -41,3 +41,9 @@ export default function Flashcard() {
       setFlashcardNumber(flash_card)
     }
 
+    function editFlashCard() {
+      axios.put(`http://127.0.0.1:8000/flashcard/`).then((response) => {
+        setFlashcard(response.data);
+      });
+    }
+
