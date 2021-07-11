@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 import FormHandler from '../../Collections/FormHandler/formHandler';
+import './addFlashcard.css'
 
 const CreateFlashcard = (props) => {
     const { values, handleChange, handleSubmit } = FormHandler(createFlashcards);
@@ -22,23 +23,27 @@ const CreateFlashcard = (props) => {
 
     return (
         <div className="addcard">
-            <h1>Add A Flashcard: </h1>
+            <h4><u>Add Flashcard: </u></h4>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Collection Id: 
-                    <input type="text" name="collection" onChange={handleChange} value={values.collection} required={true}/>
+                    Collection Id: <input type="text" name="collection" onChange={handleChange} value={values.collection} required={true}/>
                 </label>
+                <br/>
+                <br/>
                 <label>
-                    Front Text: 
-                    <input type="text" name="front_text" onChange={handleChange} value={values.front_text} required={true}/>
+                    Front Text: <input type="text" name="front_text" onChange={handleChange} value={values.front_text} required={true}/>
                 </label>
+                <br/>
+                <br/>
                 <label>
-                    Back Text: 
-                    <input type="text" name="back_text" onChange={handleChange} value={values.back_text} required={true}/>
+                    Back Text: <input type="text" name="back_text" onChange={handleChange} value={values.back_text} required={true}/>
                 </label>
+                <br/>
                 <div className="add-button">
                     <button type="submit" className="btn btn-primary">Add</button>
                 </div>
+                <br/>
+                <br/>
             </form>
             <br/>
         </div>
