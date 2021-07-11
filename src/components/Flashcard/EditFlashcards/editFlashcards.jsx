@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 import FormHandler from '../../Collections/FormHandler/formHandler';
+import './editFlashcards.css'
 
 
 const EditFlashcard = (props) => {
@@ -15,6 +16,8 @@ const EditFlashcard = (props) => {
         }
         catch (err) {
             console.log(err);
+            console.log("error editing flashcard")
+
         }
     }
 
@@ -36,11 +39,11 @@ const EditFlashcard = (props) => {
                     Back Text: <input type="text" name="back_text" placeholder="enter back text..." onChange={handleChange} value={values.back_text} required={true}/>
                 </label>
                 <br/>
+                <br/>
                 <div className="editbutton">
                     <button type="submit" className="btn btn-primary">Edit</button>
                 </div>
             </form>
-            <br/>
         </div>
     )
     

@@ -42,8 +42,6 @@ const CreateFlashcard = (props) => {
                 <div className="add-button">
                     <button type="submit" className="btn btn-primary">Add</button>
                 </div>
-                <br/>
-                <br/>
             </form>
             <br/>
         </div>

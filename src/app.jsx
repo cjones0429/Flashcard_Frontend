@@ -43,6 +43,8 @@ function App() {
 
   return(
     <div className="entire-page">
+      <br/>
+      <br/>
       <TitleBar />
       <CollectionsDisplay collections={collections} flashcards={flashcards} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
       <DisplayFlashcard collections={collections}flashcards={flashcards} getCollections={getCollections} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
