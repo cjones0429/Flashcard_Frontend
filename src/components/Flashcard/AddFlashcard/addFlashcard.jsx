@@ -4,7 +4,7 @@ import FormHandler from '../../Collections/FormHandler/formHandler';
 
 const CreateFlashcard = (props) => {
     const { values, handleChange, handleSubmit } = FormHandler(createFlashcards);
-    const [flashcards, setFlashcards] = useState(props.flashcards)
+    const [setFlashcards] = useState(props.flashcards)
 
 
     async function createFlashcards() {

@@ -5,7 +5,7 @@ import FormHandler from '../../Collections/FormHandler/formHandler';
 
 const EditFlashcard = (props) => {
     const { values, handleChange, handleSubmit } = FormHandler(() => editCard(props.flashcards.id, values));
-    const [flashcards, setFlashcards] = useState(props.flashcards);
+    const [setFlashcards] = useState(props.flashcards);
 
     async function editCard(id, values) {
         const editFlashcard = {collection: props.flashcards.collection, ...values};

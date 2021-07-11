@@ -11,9 +11,9 @@ export default function DisplayFlashcard(props){
     });
 
     return(
-        <div className="container">
+        <div className="flashcard-main">
                 <ul>
-                    <FlashcardDetails flashcards={props.flashcards} collections={props.collectios}
+                    <FlashcardDetails flashcards={props.flashcards} collections={props.collections}
                                 selectedCollection={props.selectedCollection}/>
                 </ul>  
         </div>

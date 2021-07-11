@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import EditFlashcard from '../EditFlashcards/editFlashcards';
+import './flashcardDetails.css'
 
 
 export default function FlashcardDetails(props) {
@@ -30,15 +31,18 @@ export default function FlashcardDetails(props) {
         }
 
         return(
-            <div className=''>
-                <div className ='col-md-4'>
-                </div>
-                <div className='col-md-4'>
+            <div>
+                <div className='card-details'>
                     <h1>{props.flashcards[flashcardNumber].front_text}</h1>
                     <h4>{props.flashcards[flashcardNumber].back_text}</h4>
-                    <h2>{flashcardNumber + 1}/{props.flashcards.length}</h2>
                 </div>
-                <div className='col-md-4'>
+                <br/>
+                <div className="number-of-card">
+                    <center>
+                        <h2>{flashcardNumber + 1}/{props.flashcards.length}</h2>
+                    </center>
+                </div>
+                <div className='previous-nextbtns'>
                     <button className="btn" onClick={() => goToPreviousCard()}>Previous</button>
                     <button className="btn" onClick={() => goToNextCard()}>Next</button>
                 </div>
