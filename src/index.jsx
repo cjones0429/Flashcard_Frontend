@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+
+const jsxElement = <h1>Our React App</h1>;
+console.log(jsxElement);
+
+ReactDOM.render(< App/>, document.getElementById('root'));
