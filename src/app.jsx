@@ -4,6 +4,7 @@ import CollectionsDisplay from './components/Collections/DisplayCollections/disp
 import CreateFlashcard from './components/Flashcard/AddFlashcard/addFlashcard';
 import DisplayFlashcard from './components/Flashcard/DisplayFlashcard/displayFlashcard';
 import TitleBar from './components/TitleBar/titleBar'
+import './App.css'
 
 function App() {
   const [collections, setCollections] = useState([]);
@@ -41,7 +42,7 @@ function App() {
 
 
   return(
-    <div className="">
+    <div className="entire-page">
       <TitleBar />
       <CollectionsDisplay collections={collections} flashcards={flashcards} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
       <DisplayFlashcard collections={collections}flashcards={flashcards} getCollections={getCollections} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>

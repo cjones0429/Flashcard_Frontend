@@ -20,7 +20,7 @@ const EditFlashcard = (props) => {
 
     return (
         <div className="editcard">
-            <h4>Edit Flashcard: </h4>
+            <h4><u>Edit Flashcard: </u></h4>
             <form onSubmit={handleSubmit}>
                 <label>
                     Collection I.D: <input type="text" name="collection" placeholder="enter collection I.D..." onChange={handleChange} value={values.id} required={true}/>
@@ -37,7 +37,7 @@ const EditFlashcard = (props) => {
                 </label>
                 <br/>
                 <div className="editbutton">
-                    <button type="submit" className="btn">Edit</button>
+                    <button type="submit" className="btn btn-primary">Edit</button>
                 </div>
             </form>
             <br/>
