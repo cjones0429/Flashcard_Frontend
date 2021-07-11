@@ -10,7 +10,7 @@ const EditFlashcard = (props) => {
     async function editCard(id, values) {
         const editFlashcard = {collection: props.flashcards.collection, ...values};
         try{
-            let response = await axios.put(`http://127.0.0.1:8000/collection/flashcards/${id}/${id}/`, editFlashcard)
+            let response = await axios.put(`http://127.0.0.1:8000/collection/flashcards/`, editFlashcard)
         setFlashcards(response.data)
         }
         catch (err) {

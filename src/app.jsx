@@ -3,7 +3,7 @@ import axios from 'axios';
 import CollectionsDisplay from './components/Collections/DisplayCollections/displayCollections';
 import CreateFlashcard from './components/Flashcard/AddFlashcard/addFlashcard';
 import DisplayFlashcard from './components/Flashcard/DisplayFlashcard/displayFlashcard';
-
+import TitleBar from './components/TitleBar/titleBar'
 
 function App() {
   const [collections, setCollections] = useState([]);
@@ -42,14 +42,10 @@ function App() {
 
   return(
     <div className="">
+      <TitleBar />
       <CollectionsDisplay collections={collections} flashcards={flashcards} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
-      <br/>
-      <br/>
       <DisplayFlashcard collections={collections}flashcards={flashcards} getCollections={getCollections} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
-      <br/>
       <CreateFlashcard collections={collections} flashcards={flashcards} selectedCollection={selectedCollection}/>
-      <br/>
-      <br/>
     </div>
   );
 

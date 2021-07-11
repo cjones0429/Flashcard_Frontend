@@ -42,12 +42,14 @@ export default function FlashcardDetails(props) {
                         <h2>{flashcardNumber + 1}/{props.flashcards.length}</h2>
                     </center>
                 </div>
-                <div className='previous-nextbtns'>
-                    <button className="btn" onClick={() => goToPreviousCard()}>Previous</button>
-                    <button className="btn" onClick={() => goToNextCard()}>Next</button>
+                <div className='buttons'>
+                    <center>
+                        <button className="btn btn-primary" onClick={() => goToPreviousCard()}>Previous</button>
+                        <button className="btn btn-primary" onClick={() => goToNextCard()}>Next</button>
+                    </center>
                 </div>
-                <EditFlashcard cards={props.flashcards[flashcardNumber]} collections={props.collections}
-                            selectedCollection={props.selectedCollection}/>
+                <br/>
+                <EditFlashcard cards={props.flashcards[flashcardNumber]} collections={props.collections} selectedCollection={props.selectedCollection}/>
             </div>
     )}
 }

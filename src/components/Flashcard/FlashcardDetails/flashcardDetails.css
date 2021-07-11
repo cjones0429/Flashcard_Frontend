@@ -19,4 +19,9 @@
     --translate-y: -2px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
   }
+
+.next-button {
+  display: flex;
+  margin-left: 50rem;
+}
   
