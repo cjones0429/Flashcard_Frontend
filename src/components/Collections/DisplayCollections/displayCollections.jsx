@@ -16,7 +16,7 @@ export default function DisplayCollections(props){
     return(
         <div>
             <div className="collections-title">
-                <h1>Collections:</h1>
+                <h2>Collections:</h2>
             </div>
             <div className="collections-list">
                 <h5>{collections}</h5>

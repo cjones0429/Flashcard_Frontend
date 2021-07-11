@@ -15,6 +15,7 @@ const CreateFlashcard = (props) => {
         }
         catch (err) {
             console.log(err);
+            console.log("error creating flashcard")
         }
     }
 
@@ -35,8 +36,8 @@ const CreateFlashcard = (props) => {
                     Back Text: 
                     <input type="text" name="back_text" onChange={handleChange} value={values.back_text} required={true}/>
                 </label>
-                <div className="addbutton">
-                    <button type="submit" className="btn">Add Card</button>
+                <div className="add-button">
+                    <button type="submit" className="btn btn-primary">Add</button>
                 </div>
             </form>
             <br/>

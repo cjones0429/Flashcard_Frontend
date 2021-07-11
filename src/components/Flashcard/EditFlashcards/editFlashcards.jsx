@@ -20,19 +20,20 @@ const EditFlashcard = (props) => {
 
     return (
         <div className="editcard">
-            <h6>Edit Flashcard: </h6>
+            <h4>Edit Flashcard: </h4>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Collection Id: 
-                    <input type="text" name="collection" onChange={handleChange} value={values} required={true}/>
+                    Collection I.D: <input type="text" name="collection" placeholder="enter collection I.D..." onChange={handleChange} value={values.id} required={true}/>
                 </label>
+                <br/>
+                <br/>
                 <label>
-                    Front Text: 
-                    <input type="text" name="front_text" onChange={handleChange} value={values.front_text} required={true}/>
+                    Front Text: <input type="text" name="front_text" placeholder="enter front text..." onChange={handleChange} value={values.front_text} required={true}/>
                 </label>
+                <br/>
+                <br/>
                 <label>
-                    Back Text: 
-                    <input type="text" name="back_text" onChange={handleChange} value={values.back_text} required={true}/>
+                    Back Text: <input type="text" name="back_text" placeholder="enter back text..." onChange={handleChange} value={values.back_text} required={true}/>
                 </label>
                 <br/>
                 <div className="editbutton">

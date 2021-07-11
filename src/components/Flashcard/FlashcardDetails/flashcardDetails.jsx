@@ -34,6 +34,7 @@ export default function FlashcardDetails(props) {
             <div>
                 <div className='card-details'>
                     <h1>{props.flashcards[flashcardNumber].front_text}</h1>
+                    <br/>
                     <h4>{props.flashcards[flashcardNumber].back_text}</h4>
                 </div>
                 <br/>
