@@ -39,11 +39,11 @@ const CreateFlashcard = (props) => {
                     Back Text: <input type="text" name="back_text" onChange={handleChange} value={values.back_text} required={true}/>
                 </label>
                 <br/>
+                <br/>
                 <div className="add-button">
                     <button type="submit" className="btn btn-primary">Add</button>
                 </div>
             </form>
-            <br/>
         </div>
     )
 }

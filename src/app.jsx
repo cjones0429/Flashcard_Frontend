@@ -49,6 +49,8 @@ function App() {
       <CollectionsDisplay collections={collections} flashcards={flashcards} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
       <DisplayFlashcard collections={collections}flashcards={flashcards} getCollections={getCollections} getFlashcards={getFlashcards} selectedCollection={selectedCollection}/>
       <CreateFlashcard collections={collections} flashcards={flashcards} selectedCollection={selectedCollection}/>
+      <br/>
+      <br/>
     </div>
   );
 
